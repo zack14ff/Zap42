@@ -11,8 +11,8 @@ local TabP = Window:NewTab("Key System scripts")
 -- KeyLESS argument
 local Section = Tab:NewSection("Zapped")
 
-Section:NewButton("Zap42(no work)", "FREE FREE FREEEEEEEEEEEEEEE", function()
-    print("Clicked")
+Section:NewButton("Zap42(no work)", "FREE FREE FREEEEEEEEEEEEEEE! NO READY", function()
+    print("No ready")
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/ZAP42.lua'))()
 end)
 
@@ -27,11 +27,13 @@ local Section = TabP:NewSection("ERM KEY!")
 
 Section:NewButton("Pipidastr - Unlimited(no work)", "KEYSYSTEM", function()
     print("PAYMENT!!!")
+    print("NO CODE!")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/PipiDastr - Unlimited.lua'))()
 end)
 
-Section:NewButton("AlienSaken(no work)", "WORK ONLY ON FORSAKEN", function()
+Section:NewButton("AlienSaken(small)", "WORK ONLY ON FORSAKEN(PRE-ALPHA)", function()
     print("Clicked")
+    print("EARLY")	
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/AlienSaken.lua'))()
 end)
 
