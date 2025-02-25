@@ -39,16 +39,16 @@ Rayfield:Notify({
 
  Rayfield:Notify({
    Title = "AlienSaken",
-   Content = "Version: 0.5.0Alpha-B0TA",
-   Duration = 3.5,
+   Content = "Version: 1.0.0Alpha",
+   Duration = 4.5,
    Image = "star-half",
 })
  -- Get Start
 
 --local Tab = Window:CreateTab("Main", "house-plus") -- Title, Image
 --local TabA = Window:CreateTab("Automatic", "bot-message-square") -- Title, Image
---local TabB = Window:CreateTab("Feature", "blocks") -- Title, Image
---local TabC = Window:CreateTab("Setting", "sliders-horizontal") -- Title, Image
+local TabB = Window:CreateTab("Feature", "blocks") -- Title, Image
+local TabC = Window:CreateTab("Setting", "sliders-horizontal") -- Title, Image
 local TabD = Window:CreateTab("Funiest", "sticker") -- Title, Image
 local TabE = Window:CreateTab("Credit", "badge-dollar-sign") -- Title, Image
 
@@ -131,7 +131,7 @@ end
 
 -- Keybind для Frontflip
 local Keybind = TabD:CreateKeybind({
-   Name = "Bonk",
+   Name = "Flip",
    CurrentKeybind = "P",
    HoldToInteract = false,
    Flag = "Flipper", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
@@ -139,6 +139,48 @@ local Keybind = TabD:CreateKeybind({
       zeezyFrontflip()
    -- The function that takes place when the keybind is pressed
    -- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
+   end,
+})
+
+-- TABC
+
+-- Настройка Field of View
+local FOVSlider = TabC:CreateSlider({
+   Name = "Field of View",
+   Range = {70, 120},
+   Increment = 1,
+   Suffix = "°",
+   CurrentValue = 70,
+   Callback = function(value)
+       game.Workspace.CurrentCamera.FieldOfView = value
+   end,
+})
+
+
+
+-- TabB
+
+-- Highlight для игроков
+local HighlightToggle = TabB:CreateToggle({
+   Name = "Highlight Players",
+   CurrentValue = false,
+   Callback = function(state)
+       if state then
+           for _, player in pairs(game.Players:GetPlayers()) do
+               if player ~= game.Players.LocalPlayer and player.Character then
+                   local highlight = Instance.new("Highlight")
+                   highlight.Parent = player.Character
+                   highlight.FillColor = Color3.new(1, 0, 0) -- Красный цвет
+                   highlight.OutlineColor = Color3.new(1, 0, 0)
+               end
+           end
+       else
+           for _, player in pairs(game.Players:GetPlayers()) do
+               if player.Character and player.Character:FindFirstChild("Highlight") then
+                   player.Character.Highlight:Destroy()
+               end
+           end
+       end
    end,
 })
 
