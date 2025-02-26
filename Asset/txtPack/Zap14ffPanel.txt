@@ -1,0 +1,3 @@
+--COPY DOWN TEXT--
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/ZAP14FF.lua'))()
