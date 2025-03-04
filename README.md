@@ -8,4 +8,8 @@ im in cheat and in Studio!
 - FartSaken
 - AlienSaken(Alpha)
 - ElienHub
+- Z-Commuinity
+- pipidastr - unlimited
+- hehe
 #### More soon!
+[Activy/Update log](https://github.com/zack14ff/Zap42/activity)
