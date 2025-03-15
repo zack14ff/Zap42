@@ -12,4 +12,6 @@ im in cheat and in Studio!
 - pipidastr - unlimited
 - hehe
 #### More soon!
+# Links
 [Activy/Update log](https://github.com/zack14ff/Zap42/activity)
+[Get Script](https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Asset/txtPack/Zap14ffPanel.txt)
