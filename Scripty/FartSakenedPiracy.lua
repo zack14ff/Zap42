@@ -3714,10 +3714,10 @@ then
 		end
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Game Version Mismatch",
-			Text = "Game Has Updated, Are you sure you want to run the script?",
+			Title = "Script Version Mismatch",
+			Text = "It script is old Version of FartSaken|Script is unwork",
 			Duration = 999,
-			Button1 = "Yes",
+			Button1 = "Launch",
 			Button2 = "Cancel",
 			Callback = bindable,
 		})
