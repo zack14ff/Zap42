@@ -1,5 +1,5 @@
 # Zap42
-im in cheat and in Studio!
+im in cheat ~~and in 	Studio~~!
 ## Yay! Free script without password!
 *only in the hub*
 ### Simple UI
