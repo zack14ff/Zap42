@@ -1,0 +1,347 @@
+--I hate this
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local desc = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local But = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local But_2 = Instance.new("TextButton")
+local But_3 = Instance.new("TextButton")
+local But_4 = Instance.new("TextButton")
+local But_5 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.258653909, 0, 0.216014907, 0)
+Frame.Size = UDim2.new(0.303077251, 0, 0.507610857, 0)
+
+Name.Name = "Name"
+Name.Parent = Frame
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(-5.28796846e-08, 0, 0, 0)
+Name.Size = UDim2.new(0, 577, 0, 50)
+Name.Font = Enum.Font.Unknown
+Name.Text = "RETRO STUDIO"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextSize = 63.000
+
+desc.Name = "desc"
+desc.Parent = Frame
+desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+desc.BackgroundTransparency = 1.000
+desc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+desc.BorderSizePixel = 0
+desc.Position = UDim2.new(0.372946173, 0, 0.121210083, 0)
+desc.Size = UDim2.new(0, 41, 0, 26)
+desc.Font = Enum.Font.Unknown
+desc.Text = "in game(TESTED 2011-2012+ on natural disaster)"
+desc.TextColor3 = Color3.fromRGB(255, 255, 255)
+desc.TextSize = 17.000
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.199474365, 0)
+ScrollingFrame.Size = UDim2.new(0, 577, 0, 365)
+
+But.Name = "But"
+But.Parent = ScrollingFrame
+But.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+But.BorderColor3 = Color3.fromRGB(255, 0, 0)
+But.Position = UDim2.new(0, 0, 8.36098053e-08, 0)
+But.Size = UDim2.new(0, 564, 0, 50)
+But.Font = Enum.Font.SourceSans
+But.Text = "Flipper"
+But.TextColor3 = Color3.fromRGB(255, 255, 255)
+But.TextSize = 42.000
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+But_2.Name = "But"
+But_2.Parent = ScrollingFrame
+But_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+But_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+But_2.Position = UDim2.new(0, 0, 8.36098053e-08, 0)
+But_2.Size = UDim2.new(0, 564, 0, 50)
+But_2.Font = Enum.Font.SourceSans
+But_2.Text = "FAKE LAG"
+But_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+But_2.TextSize = 42.000
+
+But_3.Name = "But"
+But_3.Parent = ScrollingFrame
+But_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+But_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+But_3.Position = UDim2.new(0, 0, 8.36098053e-08, 0)
+But_3.Size = UDim2.new(0, 564, 0, 50)
+But_3.Font = Enum.Font.SourceSans
+But_3.Text = "Revers"
+But_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+But_3.TextSize = 42.000
+
+But_4.Name = "But"
+But_4.Parent = ScrollingFrame
+But_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+But_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+But_4.Position = UDim2.new(0, 0, 8.36098053e-08, 0)
+But_4.Size = UDim2.new(0, 564, 0, 50)
+But_4.Font = Enum.Font.SourceSans
+But_4.Text = "Possible infinite yield"
+But_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+But_4.TextSize = 42.000
+
+But_5.Name = "But"
+But_5.Parent = ScrollingFrame
+But_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+But_5.BorderColor3 = Color3.fromRGB(255, 0, 0)
+But_5.Position = UDim2.new(0, 0, 8.36098053e-08, 0)
+But_5.Size = UDim2.new(0, 564, 0, 50)
+But_5.Font = Enum.Font.SourceSans
+But_5.Text = "joj0"
+But_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+But_5.TextSize = 42.000
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -0.725139797, 0)
+TextLabel.Size = UDim2.new(0, 564, 0, 803)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "More Soon...."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 100.000
+
+ImageLabel.Parent = TextLabel
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.315602839, 0, 0.488169372, 0)
+ImageLabel.Size = UDim2.new(0, 290, 0, 189)
+ImageLabel.Image = "rbxassetid://421419148"
+
+-- Scripts:
+
+local function CIGCV_fake_script() -- But.LocalScript 
+	local script = Instance.new('LocalScript', But)
+
+	local button = script.Parent
+	local function hideGui()
+		loadstring(game:HttpGet("https://pastebin.com/raw/0qZaESSb"))()
+	
+	end
+	button.MouseButton1Click:Connect(hideGui)
+end
+coroutine.wrap(CIGCV_fake_script)()
+local function RUIMURL_fake_script() -- But_2.LocalScriptX2 
+	local script = Instance.new('LocalScript', But_2)
+
+	local button = script.Parent
+	local function hideGui()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Biem6ondo/FAKELAG/refs/heads/main/Fakelag"))()
+	end
+	button.MouseButton1Click:Connect(hideGui)
+end
+coroutine.wrap(RUIMURL_fake_script)()
+local function YEDQ_fake_script() -- But_3.LocalScriptX3 
+	local script = Instance.new('LocalScript', But_3)
+
+	local button = script.Parent
+	local function hideGui()
+		local key = "C" -- Key to initiate the flashback
+		local killKey = "P" -- Key to kill the script
+		local flashbacklength = 80 -- How long the flashback should be stored in approx seconds
+		local flashbackspeed = 0.9 -- How many frames to skip during flashback (set to 0 to disable)
+	
+		if not game:IsLoaded() then game.Loaded:Wait() end -- Ensure game is fully loaded before execution
+	
+		local name = "FlashbackSystem" -- Unique name to prevent conflicts
+		local frames, uis, LP, RS = {}, game:GetService("UserInputService"), game:GetService("Players").LocalPlayer, game:GetService("RunService")
+	
+		-- Prevent issues with VR Navigation
+		local VRService = game:GetService("VRService")
+		if VRService.VREnabled then return end -- Stop execution if VR is enabled
+	
+		game:GetService("StarterPlayer").DevComputerMovementMode = Enum.DevComputerMovementMode.KeyboardMouse
+		game:GetService("StarterPlayer").DevTouchMovementMode = Enum.DevTouchMovementMode.Thumbstick
+	
+		if not LP or not uis then return end -- Ensure LocalPlayer and UserInputService exist
+	
+		pcall(RS.UnbindFromRenderStep, RS, name) -- Unbind the function if previously bound
+	
+		local function getchar()
+			return LP.Character or LP.CharacterAdded:Wait()
+		end
+	
+		function gethrp(c)
+			return c and (c:FindFirstChild("HumanoidRootPart") or c.RootPart or c.PrimaryPart or c:FindFirstChild("Torso") or c:FindFirstChild("UpperTorso") or c:FindFirstChildWhichIsA("BasePart"))
+		end
+	
+		local flashback = { lastinput = false, canrevert = true }
+	
+		function flashback:Advance(char, hrp, hum, allowinput)
+			if not char or not hrp or not hum then return end -- Ensure necessary components exist
+			if #frames > flashbacklength * 60 then -- Ensure history does not exceed limit
+				table.remove(frames, 1)
+			end
+	
+			if allowinput and not self.canrevert then
+				self.canrevert = true
+			end
+	
+			if self.lastinput then -- Restore platformstand
+				hum.PlatformStand = false
+				self.lastinput = false
+			end
+	
+			table.insert(frames, {
+				hrp.CFrame,
+				hrp.Velocity,
+				hum:GetState(),
+				hum.PlatformStand,
+				char:FindFirstChildOfClass("Tool")
+			})
+		end
+	
+		function flashback:Revert(char, hrp, hum)
+			if not char or not hrp or not hum or #frames == 0 or not self.canrevert then
+				self.canrevert = false
+				self:Advance(char, hrp, hum)
+				return
+			end
+	
+			local num = #frames
+			for i = 1, flashbackspeed do -- Skip frames if enabled
+				table.remove(frames, num)
+				num = num - 1
+			end
+	
+			self.lastinput = true
+			local lastframe = frames[num]
+			table.remove(frames, num)
+			hrp.CFrame = lastframe[1]
+			hrp.Velocity = -lastframe[2]
+			hum:ChangeState(lastframe[3])
+			hum.PlatformStand = lastframe[4] 
+	
+			local currenttool = char:FindFirstChildOfClass("Tool")
+			if lastframe[5] then -- Equip/unequip tools
+				if not currenttool then
+					hum:EquipTool(lastframe[5])
+				end
+			else
+				hum:UnequipTools()
+			end
+		end
+	
+		local function step()
+			local char = getchar()
+			local hrp = gethrp(char)
+			local hum = char and char:FindFirstChildWhichIsA("Humanoid")
+			if not char or not hrp or not hum then return end -- Ensure valid state
+	
+			if uis:IsKeyDown(Enum.KeyCode[key]) then -- Begin flashback
+				flashback:Revert(char, hrp, hum)
+			else
+				flashback:Advance(char, hrp, hum, true)
+			end
+	
+			if uis:IsKeyDown(Enum.KeyCode[killKey]) then -- Kill the script
+				RS:UnbindFromRenderStep(name)
+				script:Destroy()
+			end
+		end
+	
+		-- Bind function safely
+		pcall(function()
+			RS:BindToRenderStep(name, 1, step)
+		end)
+	end
+	button.MouseButton1Click:Connect(hideGui)
+end
+coroutine.wrap(YEDQ_fake_script)()
+local function JMHISKZ_fake_script() -- But_4.LocalScriptX5 
+	local script = Instance.new('LocalScript', But_4)
+
+	print("Hello world!")
+	print("N0")
+end
+coroutine.wrap(JMHISKZ_fake_script)()
+local function CVZN_fake_script() -- But_5.LocalScriptX4 
+	local script = Instance.new('LocalScript', But_5)
+
+	local button = script.Parent
+	local function hideGui()
+		loadstring(game:HttpGet("https://pastebin.com/raw/6EDNqA7f"))()("T.me/AvtorScripts")
+	    print("Server:I will ban you")
+	end
+	button.MouseButton1Click:Connect(hideGui)
+end
+coroutine.wrap(CVZN_fake_script)()
+local function EEFMNCV_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local TweenService = game:GetService('TweenService')
+	local Runservice = game:GetService('RunService')
+	local Plr = game:GetService('Players').LocalPlayer
+	local plrMouse = Plr:GetMouse()
+	
+	local FrameGui = script.Parent
+	local Hold = false
+	local WithinFrame = false
+	local Dragging = false
+	
+	Runservice.RenderStepped:Connect(function()
+		if Hold and WithinFrame and not Dragging then
+			Dragging = true
+		elseif not Hold then
+			Dragging = false
+		end
+		
+		if Dragging then
+			local X,Y = plrMouse.X,plrMouse.Y
+			TweenService:Create(FrameGui,TweenInfo.new(0.1),{Position = UDim2.new(0,X,0,Y)}):Play()
+		end
+		
+	end)
+	
+	FrameGui.MouseEnter:Connect(function()
+		WithinFrame = true
+	end)
+	
+	FrameGui.MouseLeave:Connect(function()
+		WithinFrame = false
+	end)
+	
+	plrMouse.Button1Down:Connect(function()
+		Hold = true
+	end)
+	
+	plrMouse.Button1Up:Connect(function()
+		Hold = false
+		Dragging = false
+	end)
+end
+coroutine.wrap(EEFMNCV_fake_script)()
