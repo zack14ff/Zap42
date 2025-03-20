@@ -1,4 +1,3 @@
---I hate this
 -- Gui to Lua
 -- Version: 3.2
 
@@ -15,6 +14,8 @@ local But_2 = Instance.new("TextButton")
 local But_3 = Instance.new("TextButton")
 local But_4 = Instance.new("TextButton")
 local But_5 = Instance.new("TextButton")
+local But_6 = Instance.new("TextButton")
+local But_7 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
 
@@ -27,8 +28,8 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderSizePixel = 3
-Frame.Position = UDim2.new(0.258653909, 0, 0.216014907, 0)
-Frame.Size = UDim2.new(0.303077251, 0, 0.507610857, 0)
+Frame.Position = UDim2.new(0.258653849, 0, 0.216014877, 0)
+Frame.Size = UDim2.new(0.456955433, 0, 0.5697999, 0)
 
 Name.Name = "Name"
 Name.Parent = Frame
@@ -60,8 +61,8 @@ ScrollingFrame.Parent = Frame
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame.Position = UDim2.new(0, 0, 0.199474365, 0)
-ScrollingFrame.Size = UDim2.new(0, 577, 0, 365)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.19947432, 0)
+ScrollingFrame.Size = UDim2.new(0, 546, 0, 365)
 
 But.Name = "But"
 But.Parent = ScrollingFrame
@@ -92,7 +93,7 @@ But_3.Name = "But"
 But_3.Parent = ScrollingFrame
 But_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 But_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
-But_3.Position = UDim2.new(0, 0, 8.36098053e-08, 0)
+But_3.Position = UDim2.new(0, 0, 0.273972601, 0)
 But_3.Size = UDim2.new(0, 564, 0, 50)
 But_3.Font = Enum.Font.SourceSans
 But_3.Text = "Revers"
@@ -121,13 +122,35 @@ But_5.Text = "joj0"
 But_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 But_5.TextSize = 42.000
 
+But_6.Name = "But"
+But_6.Parent = ScrollingFrame
+But_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+But_6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+But_6.Position = UDim2.new(0, 0, 8.36098053e-08, 0)
+But_6.Size = UDim2.new(0, 564, 0, 50)
+But_6.Font = Enum.Font.SourceSans
+But_6.Text = "New Gui(Soon)"
+But_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+But_6.TextSize = 42.000
+
+But_7.Name = "But"
+But_7.Parent = ScrollingFrame
+But_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+But_7.BorderColor3 = Color3.fromRGB(255, 0, 0)
+But_7.Position = UDim2.new(0, 0, 8.36098053e-08, 0)
+But_7.Size = UDim2.new(0, 564, 0, 50)
+But_7.Font = Enum.Font.SourceSans
+But_7.Text = "Close"
+But_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+But_7.TextSize = 42.000
+
 TextLabel.Parent = ScrollingFrame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, -0.725139797, 0)
-TextLabel.Size = UDim2.new(0, 564, 0, 803)
+TextLabel.Position = UDim2.new(0, 0, 0.314415753, 0)
+TextLabel.Size = UDim2.new(0, 564, 0, 486)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "More Soon...."
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -144,7 +167,7 @@ ImageLabel.Image = "rbxassetid://421419148"
 
 -- Scripts:
 
-local function CIGCV_fake_script() -- But.LocalScript 
+local function PUNJUFA_fake_script() -- But.LocalScript 
 	local script = Instance.new('LocalScript', But)
 
 	local button = script.Parent
@@ -154,8 +177,8 @@ local function CIGCV_fake_script() -- But.LocalScript
 	end
 	button.MouseButton1Click:Connect(hideGui)
 end
-coroutine.wrap(CIGCV_fake_script)()
-local function RUIMURL_fake_script() -- But_2.LocalScriptX2 
+coroutine.wrap(PUNJUFA_fake_script)()
+local function QUPHXL_fake_script() -- But_2.LocalScriptX2 
 	local script = Instance.new('LocalScript', But_2)
 
 	local button = script.Parent
@@ -164,14 +187,14 @@ local function RUIMURL_fake_script() -- But_2.LocalScriptX2
 	end
 	button.MouseButton1Click:Connect(hideGui)
 end
-coroutine.wrap(RUIMURL_fake_script)()
-local function YEDQ_fake_script() -- But_3.LocalScriptX3 
+coroutine.wrap(QUPHXL_fake_script)()
+local function YXMS_fake_script() -- But_3.LocalScriptX3 
 	local script = Instance.new('LocalScript', But_3)
 
 	local button = script.Parent
 	local function hideGui()
 		local key = "C" -- Key to initiate the flashback
-		local killKey = "P" -- Key to kill the script
+		local killKey = "[" -- Key to kill the script
 		local flashbacklength = 80 -- How long the flashback should be stored in approx seconds
 		local flashbackspeed = 0.9 -- How many frames to skip during flashback (set to 0 to disable)
 	
@@ -281,15 +304,15 @@ local function YEDQ_fake_script() -- But_3.LocalScriptX3
 	end
 	button.MouseButton1Click:Connect(hideGui)
 end
-coroutine.wrap(YEDQ_fake_script)()
-local function JMHISKZ_fake_script() -- But_4.LocalScriptX5 
+coroutine.wrap(YXMS_fake_script)()
+local function YJNQ_fake_script() -- But_4.LocalScriptX5 
 	local script = Instance.new('LocalScript', But_4)
 
 	print("Hello world!")
 	print("N0")
 end
-coroutine.wrap(JMHISKZ_fake_script)()
-local function CVZN_fake_script() -- But_5.LocalScriptX4 
+coroutine.wrap(YJNQ_fake_script)()
+local function BSKEUO_fake_script() -- But_5.LocalScriptX42 
 	local script = Instance.new('LocalScript', But_5)
 
 	local button = script.Parent
@@ -299,49 +322,74 @@ local function CVZN_fake_script() -- But_5.LocalScriptX4
 	end
 	button.MouseButton1Click:Connect(hideGui)
 end
-coroutine.wrap(CVZN_fake_script)()
-local function EEFMNCV_fake_script() -- Frame.LocalScript 
+coroutine.wrap(BSKEUO_fake_script)()
+local function WEUY_fake_script() -- But_6.LocalScriptX52 
+	local script = Instance.new('LocalScript', But_6)
+
+	local button = script.Parent
+	local function hideGui()
+		print("S00N")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/FusionFlipper"))()
+	end
+	button.MouseButton1Click:Connect(hideGui)
+end
+coroutine.wrap(WEUY_fake_script)()
+local function OMXVHVY_fake_script() -- But_7.LocalScriptX4 
+	local script = Instance.new('LocalScript', But_7)
+
+	local button = script.Parent
+	local scroll = button.Parent
+	local fram = scroll.Parent
+	local gui = fram.Parent
+	
+	
+	local function hideGui()
+	  gui:Destroy()
+	end
+	button.MouseButton1Click:Connect(hideGui)
+end
+coroutine.wrap(OMXVHVY_fake_script)()
+local function RWIPS_fake_script() -- Frame.DragScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	local TweenService = game:GetService('TweenService')
-	local Runservice = game:GetService('RunService')
-	local Plr = game:GetService('Players').LocalPlayer
-	local plrMouse = Plr:GetMouse()
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
 	
-	local FrameGui = script.Parent
-	local Hold = false
-	local WithinFrame = false
-	local Dragging = false
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
 	
-	Runservice.RenderStepped:Connect(function()
-		if Hold and WithinFrame and not Dragging then
-			Dragging = true
-		elseif not Hold then
-			Dragging = false
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
 		end
-		
-		if Dragging then
-			local X,Y = plrMouse.X,plrMouse.Y
-			TweenService:Create(FrameGui,TweenInfo.new(0.1),{Position = UDim2.new(0,X,0,Y)}):Play()
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
 		end
-		
 	end)
 	
-	FrameGui.MouseEnter:Connect(function()
-		WithinFrame = true
-	end)
-	
-	FrameGui.MouseLeave:Connect(function()
-		WithinFrame = false
-	end)
-	
-	plrMouse.Button1Down:Connect(function()
-		Hold = true
-	end)
-	
-	plrMouse.Button1Up:Connect(function()
-		Hold = false
-		Dragging = false
-	end)
 end
-coroutine.wrap(EEFMNCV_fake_script)()
+coroutine.wrap(RWIPS_fake_script)()
