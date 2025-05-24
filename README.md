@@ -1,4 +1,5 @@
 # Zap42
+- CHEAT IS BAD AND PROJECT FROZEN
 im in cheat ~~and in 	Studio~~!
 ## Yay! Free script without password!
 *only in the hub*
