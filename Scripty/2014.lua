@@ -37,7 +37,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Main", "house-plus") -- Title, Image
+local Tab = Window:CreateTab("Main", house-plus) -- Title, Image
 
 local Label = Tab:CreateLabel("Welcome to script!", "laugh", Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 local Paragraph = Tab:CreateParagraph({Title = "GoingTo2024", Content = "Version: 1.0.0"})
@@ -51,7 +51,7 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local FE = Window:CreateTab("FE and scripth hub", "server") -- Title, Image
+local FE = Window:CreateTab("FE and scripth hub", 0) -- Title, Image
 
 local Section = FE:CreateSection("Fun")
 local Button = FE:CreateButton({
