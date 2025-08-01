@@ -30,12 +30,6 @@ end)
 
 local Section = TabP:NewSection("ERM KEY!")
 
-Section:NewButton("Pipidastr - Unlimited(no work)", "KEYSYSTEM", function()
-    print("PAYMENT!!!")
-    print("NO CODE!")
-loadstring(game:HttpGet('https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/PipiDastr - Unlimited.lua'))()
-end)
-
 Section:NewButton("AlienSaken(small)", "WORK ONLY ON FORSAKEN(PRE-ALPHA)", function()
     print("Clicked")
     print("EARLY")	
