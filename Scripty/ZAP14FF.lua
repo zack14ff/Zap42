@@ -13,7 +13,7 @@ local Section = Tab:NewSection("Zapped")
 
 Section:NewButton("Z-Commuinity", "FREE FREE FREEEEEEEEEEEEEEE!", function()
     print("Do")
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/Z-Commuinity.lua'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/hub.lua'))()
 end)
 
 Section:NewButton("Zap42(no work)", "FREE FREE FREEEEEEEEEEEEEEE! NO READY", function()
