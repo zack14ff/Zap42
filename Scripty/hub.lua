@@ -87,7 +87,21 @@ local Paragraph = Tab1:Paragraph({
     Locked = false,
 })
 
-
+local Toggle = Tab:Toggle({
+    Title = "Useless Mode",
+    Desc = "Unlock Keyless Tab",
+    Icon = "lock",
+    Type = "Checkbox",
+    Default = false,
+    Callback = function(state) 
+       WindUI:Popup({
+    Title = "i cant do it",
+    Icon = "info",
+    Content = "Uselles",
+    
+})
+    end
+})
 
 --[[
 local Section24 = Window:Section({
@@ -102,6 +116,42 @@ local Tab12 = Window:Tab({
     Title = "Keyless",
     Icon = "beer-off",
     Locked = true,
+})
+
+local Paragraph = Tab12:Paragraph({
+    Title = "Extra-Fartsak",
+    Desc = "add some misc",
+    Color = "Green",
+    Image = "https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Asset/txtPack/EFv2.png",
+    ImageSize = 30,
+    Thumbnail = "https://tr.rbxcdn.com/180DAY-2b10bc516d1303fdcba45bfb46c72d38/768/432/Image/Webp/noFilter",
+    ThumbnailSize = 80,
+    Locked = false,
+    Buttons = {
+        {
+            Icon = "circle-power",
+            Title = "Execute",
+            Callback = function() print("BUX") end,
+        }
+    }
+})
+
+local Paragraph = Tab12:Paragraph({
+    Title = "Die of Fart",
+    Desc = "add some feature",
+    Color = "Grey",
+    Image = "https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Asset/txtPack/DOFsky.png",
+    ImageSize = 30,
+    Thumbnail = "https://tr.rbxcdn.com/180DAY-27ae7e96d54cffb1ec1388363b723a33/768/432/Image/Webp/noFilter",
+    ThumbnailSize = 80,
+    Locked = false,
+    Buttons = {
+        {
+            Icon = "circle-power",
+            Title = "Execute",
+            Callback = function() print("TIX") end,
+        }
+    }
 })
 
 local Tab13 = Window:Tab({
