@@ -4,6 +4,7 @@ im in cheat ~~and in 	Studio~~!
 ## Yay! Free script without password!
 *only in the hub*
 ### Simple UI
+- Windui
 - Rayfield
 - C00Lgui(looks like)
 ## Script:
