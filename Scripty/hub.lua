@@ -77,8 +77,8 @@ local Tab1 = Window:Tab({
 })
 
 local Paragraph = Tab1:Paragraph({
-    Title = "V1.5.0",
-    Desc = "Scripts: 0",
+    Title = "V2.0.0",
+    Desc = "Scripts: 3(5)",
     Color = "Grey",
     Image = "book-type",
     ImageSize = 30,
@@ -87,21 +87,6 @@ local Paragraph = Tab1:Paragraph({
     Locked = false,
 })
 
-local Toggle = Tab:Toggle({
-    Title = "Useless Mode",
-    Desc = "Unlock Keyless Tab",
-    Icon = "lock",
-    Type = "Checkbox",
-    Default = false,
-    Callback = function(state) 
-       WindUI:Popup({
-    Title = "i cant do it",
-    Icon = "info",
-    Content = "Uselles",
-    
-})
-    end
-})
 
 --[[
 local Section24 = Window:Section({
@@ -191,7 +176,14 @@ local Paragraph = Tab13:Paragraph({
         {
             Icon = "circle-power",
             Title = "Execute",
-            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Selivus08/Elysian/refs/heads/main/ElysianV.lua",true))() end,
+            Callback = function() if getgenv then
+    getgenv().BloxtrapRPC = "true"
+    getgenv().DebugNotifications = "false"
+    getgenv().TrackMePlease = "true"
+   end
+
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua"))()
+                end,
         }
     }
 })
@@ -219,3 +211,4 @@ local Tab10 = Window:Tab({
     Icon = "eye",
     Locked = true,
 })
+
