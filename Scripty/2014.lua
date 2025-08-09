@@ -166,7 +166,7 @@ local TP = Window:Tab({
     Locked = false,
 })
 
-local Paragraph = Tab:Paragraph({
+local Paragraph = TP:Paragraph({
     Title = "!Page is not ready!",
     Desc = "in update 3.0.0 page was made fully",
     Color = "Red",
@@ -175,13 +175,6 @@ local Paragraph = Tab:Paragraph({
     Thumbnail = "https://wallpapers.com/images/hd/warning-7cm1249mtt71a4sy.jpg",
     ThumbnailSize = 80,
     Locked = false,
-    Buttons = {
-        {
-            Icon = "bird",
-            Title = "Button",
-            Callback = function() print("1 Button") end,
-        }
-    }
 })
 
 local Button = TP:Button({
