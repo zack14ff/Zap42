@@ -17,7 +17,7 @@ local Window = WindUI:CreateWindow({
     ScrollBarEnabled = false,
 
 })
-
+--[[
 WindUI:Popup({
     Title = "Hello Do YOU Want Get Update log link?",
     Icon = "info",
@@ -40,7 +40,7 @@ WindUI:Popup({
         }
     }
 })
-
+]]--
 
 --[[
 local Section = Window:Section({
@@ -244,3 +244,4 @@ local Paragraph = Tab10:Paragraph({
     ImageSize = 30,
     Locked = false,
 })
+
