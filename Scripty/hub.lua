@@ -99,7 +99,7 @@ local Section24 = Window:Section({
 local Tab12 = Window:Tab({
     Title = "Keyless",
     Icon = "beer-off",
-    Locked = true,
+    Locked = false,
 })
 
 local Paragraph = Tab12:Paragraph({
@@ -115,7 +115,25 @@ local Paragraph = Tab12:Paragraph({
         {
             Icon = "circle-power",
             Title = "Execute",
-            Callback = function() print("TIX and more") end,
+            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/2014.lua"))() end,
+        }
+    }
+})
+
+local Paragraph = Tab12:Paragraph({
+    Title = "Voidware",
+    Desc = "99 night with monster",
+    Color = "Grey",
+    Image = "https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Asset/txtPack/Noinfo.png",
+    ImageSize = 30,
+    Thumbnail = "https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Asset/txtPack/bannerrrrr.png",
+    ThumbnailSize = 80,
+    Locked = false,
+    Buttons = {
+        {
+            Icon = "circle-power",
+            Title = "Execute",
+            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))() end,
         }
     }
 })
