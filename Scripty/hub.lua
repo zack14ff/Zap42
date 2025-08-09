@@ -64,9 +64,9 @@ local Paragraph = Tab:Paragraph({
     Desc = "Hub have some good script's and our scripts",
     Color = "Grey",
     Image = "https://tr.rbxcdn.com/180DAY-c2d008358cdfb62d7962d0d68f793dbe/420/420/Decal/Webp/noFilter",
-    ImageSize = 30,
+    ImageSize = 80,
     Thumbnail = "https://tr.rbxcdn.com/180DAY-ffffbb2dc3570de54bf33f7b9509833e/150/150/Decal/Webp/noFilter",
-    ThumbnailSize = 80,
+    ThumbnailSize = 70,
     Locked = false,
 })
 
@@ -77,7 +77,7 @@ local Tab1 = Window:Tab({
 })
 
 local Paragraph = Tab1:Paragraph({
-    Title = "V2.0.0",
+    Title = "V1.5.0",
     Desc = "Scripts: 3(5)",
     Color = "Grey",
     Image = "book-type",
@@ -86,7 +86,6 @@ local Paragraph = Tab1:Paragraph({
     ThumbnailSize = 80,
     Locked = false,
 })
-
 
 --[[
 local Section24 = Window:Section({
@@ -101,6 +100,24 @@ local Tab12 = Window:Tab({
     Title = "Keyless",
     Icon = "beer-off",
     Locked = true,
+})
+
+local Paragraph = Tab12:Paragraph({
+    Title = "PowerShellDY",
+    Desc = "Going to 2014: Tool",
+    Color = "Grey",
+    Image = "https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Asset/txtPack/shellDY.png",
+    ImageSize = 30,
+    Thumbnail = "https://avatars.mds.yandex.net/i?id=fb9538897115623680488bd959432e05_l-4010891-images-thumbs&n=13",
+    ThumbnailSize = 80,
+    Locked = false,
+    Buttons = {
+        {
+            Icon = "circle-power",
+            Title = "Execute",
+            Callback = function() print("TIX and more") end,
+        }
+    }
 })
 
 local Paragraph = Tab12:Paragraph({
@@ -176,14 +193,7 @@ local Paragraph = Tab13:Paragraph({
         {
             Icon = "circle-power",
             Title = "Execute",
-            Callback = function() if getgenv then
-    getgenv().BloxtrapRPC = "true"
-    getgenv().DebugNotifications = "false"
-    getgenv().TrackMePlease = "true"
-   end
-
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua"))()
-                end,
+            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Selivus08/Elysian/refs/heads/main/ElysianV.lua",true))() end,
         }
     }
 })
@@ -199,8 +209,8 @@ local Paragraph = Tab13:Paragraph({
     Locked = false,
     Buttons = {
         {
-            Icon = "circle-power",
-            Title = "Execute",
+            Icon = "accessibility",
+            Title = "Print Console",
             Callback = function() print("https://discord.gg/7kCeg945V5") end,
         }
     }
@@ -212,3 +222,11 @@ local Tab10 = Window:Tab({
     Locked = true,
 })
 
+local Paragraph = Tab10:Paragraph({
+    Title = "No there any",
+    Desc = "NO any shit there",
+    Color = "Green",
+    Image = "apple",
+    ImageSize = 30,
+    Locked = false,
+})
