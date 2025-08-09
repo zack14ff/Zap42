@@ -18,10 +18,6 @@ local Window = WindUI:CreateWindow({
 
 })
 
-Window:DisableTopbarButtons({
-    "FullScreen", 
-})
-
 WindUI:Popup({
     Title = "Hello Do YOU Want Get Update log link?",
     Icon = "info",
