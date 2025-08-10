@@ -30,7 +30,7 @@ local Tab = Window:Tab({
 
 local Paragraph = Tab:Paragraph({
     Title = "Power of ShellD",
-    Desc = "v2.5.0: start legend of coolgui",
+    Desc = "v3.0.0: start legend of coolgui",
     Color = "Orange",
     Image = "https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Asset/txtPack/shellDY.png",
     ImageSize = 90,
@@ -146,17 +146,6 @@ local Button = Freaky:Button({
 local TP = Window:Tab({
     Title = "Teleport",
     Icon = "land-plot",
-    Locked = false,
-})
-
-local Paragraph = TP:Paragraph({
-    Title = "!Page is not ready!",
-    Desc = "in update 3.0.0 page was made fully",
-    Color = "Red",
-    Image = "triangle-alert",
-    ImageSize = 30,
-    Thumbnail = "https://wallpapers.com/images/hd/warning-7cm1249mtt71a4sy.jpg",
-    ThumbnailSize = 80,
     Locked = false,
 })
 
@@ -451,3 +440,4 @@ local Section = TP:Section({
     TextXAlignment = "Left",
     TextSize = 17, -- Default Size
 })
+
