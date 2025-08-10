@@ -14,23 +14,6 @@ local Window = WindUI:CreateWindow({
     BackgroundImageTransparency = 0.42,
     HideSearchBar = true,
     ScrollBarEnabled = false,
-    User = {
-        Enabled = true,
-        Anonymous = true,
-        Callback = function()
-            print("clicked")
-        end,
-    },
-    KeySystem = { -- <- ↓ remove this all, if you dont neet the key system
-        Key = { "1234", "5678" },
-        Note = "Example Key System.",
-        Thumbnail = {
-            Image = "rbxassetid://",
-            Title = "Thumbnail",
-        },
-        URL = "https://github.com/Footagesus/WindUI",
-        SaveKey = true,
-    },
 })
 
 --                        | Special name     | Icon     | Callback                         | Order
@@ -440,3 +423,4 @@ local Button = TP:Button({
      end
     end
 })
+
