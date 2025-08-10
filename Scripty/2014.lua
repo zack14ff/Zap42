@@ -221,17 +221,17 @@ local Button = TP:Button({
 })
 
 local Section = TP:Section({ 
-    Title = "SFOTH[NO READY]",
+    Title = "SFOTH",
     TextXAlignment = "Left",
     TextSize = 17, -- Default Size
 })
-
+--done
 local Button = TP:Button({
     Title = "ice sword",
     Desc = "Permament kill able sword",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(2.130439519882202, 247.79998779296875, 329.0680847167969) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -247,13 +247,13 @@ local Button = TP:Button({
      end
     end
 })
-
+--done
 local Button = TP:Button({
     Title = "Cetner",
     Desc = "Center of fight",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(1.5541311502456665, 247.79998779296875, 0.031622666865587234) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -269,13 +269,13 @@ local Button = TP:Button({
      end
     end
 })
-
+--done
 local Button = TP:Button({
     Title = "teleport ball",
     Desc = "ball with ability teleport u",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(-209.40292358398438, 272.9999694824219, -65.89315032958984) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -291,13 +291,13 @@ local Button = TP:Button({
      end
     end
 })
-
+--done
 local Button = TP:Button({
     Title = "Bersek Ball",
     Desc = "Make you undiyng",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(151.48257446289062, 139.79998779296875, 208.0006103515625) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -313,13 +313,13 @@ local Button = TP:Button({
      end
     end
 })
-
+--done
 local Button = TP:Button({
     Title = "Invisible ball",
     Desc = "makee you invisible not fully",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(-204.3280029296875, 468.5999755859375, 256.03753662109375) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -335,13 +335,13 @@ local Button = TP:Button({
      end
     end
 })
-
+--done
 local Button = TP:Button({
     Title = "Dash Sword",
     Desc = "Sword._.",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(-465.3937683105469, 386.9999694824219, 79.05535125732422) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -357,13 +357,13 @@ local Button = TP:Button({
      end
     end
 })
-
+--done
 local Button = TP:Button({
     Title = "Acid Sword",
     Desc = "Sword._.",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(175.64822387695312, 218.99998474121094, 58.12086486816406) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -379,13 +379,13 @@ local Button = TP:Button({
      end
     end
 })
-
+--done
 local Button = TP:Button({
     Title = "Level Sword",
     Desc = "Sword._.",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(354.71978759765625, 14.999537467956543, 128.3690185546875) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -401,13 +401,35 @@ local Button = TP:Button({
      end
     end
 })
-
+--done
 local Button = TP:Button({
     Title = "Idk Sword",
     Desc = "._.",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(84.61595153808594, 634.199951171875, -284.7710266113281) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+--done
+local Button = TP:Button({
+    Title = "Fire Sword",
+    Desc = "._.",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-222.59616088867188, 345.0000915527344, -144.3865203857422) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -424,3 +446,8 @@ local Button = TP:Button({
     end
 })
 
+local Section = TP:Section({ 
+    Title = "Lift",
+    TextXAlignment = "Left",
+    TextSize = 17, -- Default Size
+})
