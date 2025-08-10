@@ -14,6 +14,23 @@ local Window = WindUI:CreateWindow({
     BackgroundImageTransparency = 0.42,
     HideSearchBar = true,
     ScrollBarEnabled = false,
+    User = {
+        Enabled = true,
+        Anonymous = true,
+        Callback = function()
+            print("clicked")
+        end,
+    },
+    KeySystem = { -- <- ↓ remove this all, if you dont neet the key system
+        Key = { "1234", "5678" },
+        Note = "Example Key System.",
+        Thumbnail = {
+            Image = "rbxassetid://",
+            Title = "Thumbnail",
+        },
+        URL = "https://github.com/Footagesus/WindUI",
+        SaveKey = true,
+    },
 })
 
 --                        | Special name     | Icon     | Callback                         | Order
@@ -177,11 +194,11 @@ local Section = TP:Section({
 })
 
 local Button = TP:Button({
-    Title = "island",
-    Desc = "DON'T WORK111111",
+    Title = "Spawn",
+    Desc = "Tower",
     Locked = false,
     Callback = function()
-        local targetPosition = Vector3.new(0, 5, 0) -- Замените на нужные координаты
+        local targetPosition = Vector3.new(-232.21856689453125, 194.39993286132812, 316.9129943847656) -- Замените на нужные координаты
      local player = game.Players.LocalPlayer
      if not player then return end
     
@@ -191,10 +208,235 @@ local Button = TP:Button({
     -- Проверка анчора (чтобы избежать ошибок)
      if humanoidRootPart then
         humanoidRootPart.CFrame = CFrame.new(targetPosition)
-        print("Телепортация успешна!")
+        print("Teleported!")
      else
-        warn("HumanoidRootPart не найден")
+        warn("HumanoidRootPart no found")
      end
     end
 })
 
+local Button = TP:Button({
+    Title = "island",
+    Desc = "Teleport on Disaster Place",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Section = TP:Section({ 
+    Title = "SFOTH[NO READY]",
+    TextXAlignment = "Left",
+    TextSize = 17, -- Default Size
+})
+
+local Button = TP:Button({
+    Title = "ice sword",
+    Desc = "Permament kill able sword",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Button = TP:Button({
+    Title = "Cetner",
+    Desc = "Center of fight",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Button = TP:Button({
+    Title = "teleport ball",
+    Desc = "ball with ability teleport u",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Button = TP:Button({
+    Title = "Bersek Ball",
+    Desc = "Make you undiyng",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Button = TP:Button({
+    Title = "Invisible ball",
+    Desc = "makee you invisible not fully",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Button = TP:Button({
+    Title = "Dash Sword",
+    Desc = "Sword._.",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Button = TP:Button({
+    Title = "Acid Sword",
+    Desc = "Sword._.",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Button = TP:Button({
+    Title = "Level Sword",
+    Desc = "Sword._.",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
+
+local Button = TP:Button({
+    Title = "Idk Sword",
+    Desc = "._.",
+    Locked = false,
+    Callback = function()
+        local targetPosition = Vector3.new(-86.43122100830078, 47.400001525878906, -11.932801246643066) -- Замените на нужные координаты
+     local player = game.Players.LocalPlayer
+     if not player then return end
+    
+     local character = player.Character or player.CharacterAdded:Wait()
+     local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+    
+    -- Проверка анчора (чтобы избежать ошибок)
+     if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+        print("Teleported!")
+     else
+        warn("HumanoidRootPart no found")
+     end
+    end
+})
