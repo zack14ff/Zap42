@@ -147,7 +147,7 @@ local Paragraph = Tab12:Paragraph({
         {
             Icon = "circle-power",
             Title = "Execute",
-            Callback = function() print("BUX") end,
+            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/EF.lua", true))() end,
         }
     }
 })
@@ -165,7 +165,7 @@ local Paragraph = Tab12:Paragraph({
         {
             Icon = "circle-power",
             Title = "Execute",
-            Callback = function() print("TIX") end,
+            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/zack14ff/Zap42/refs/heads/main/Scripty/DOF.lua", true))() end,
         }
     }
 })
