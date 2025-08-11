@@ -195,7 +195,7 @@ local Paragraph = Tab13:Paragraph({
 })
 
 local Paragraph = Tab13:Paragraph({
-    Title = "FartSaken",
+    Title = "FartSaken(bugged)",
     Desc = "Best Script ever on FORSAKEN!!!!",
     Color = "Green",
     Image = "https://tr.rbxcdn.com/180DAY-ea315c8b604437b4cabe885f69f6896e/420/420/Image/Webp/noFilter",
@@ -203,22 +203,6 @@ local Paragraph = Tab13:Paragraph({
     Thumbnail = "https://tr.rbxcdn.com/180DAY-2b10bc516d1303fdcba45bfb46c72d38/768/432/Image/Webp/noFilter",
     ThumbnailSize = 80,
     Locked = false,
-    Buttons = {
-        {
-            Icon = "circle-power",
-            Title = "Execute",
-            Callback = function() 
-                if getgenv then
-                  getgenv().BloxtrapRPC = "true"
-                  getgenv().DebugNotifications = "false"
-                  getgenv().TrackMePlease = "true"
-            end
-
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua"))() 
-
-           end,
-        }
-    }
 })
 
 local Paragraph = Tab13:Paragraph({
@@ -253,4 +237,5 @@ local Paragraph = Tab10:Paragraph({
     ImageSize = 30,
     Locked = false,
 })
+
 
