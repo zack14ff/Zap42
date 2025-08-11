@@ -222,7 +222,7 @@ local Paragraph = Tab13:Paragraph({
 })
 
 local Paragraph = Tab13:Paragraph({
-    Title = "Ugly Hub",
+    Title = "Ugly Hub[SOON WITH SUPPORT HUB_09]",
     Desc = "Best Script in game steal a brainot",
     Color = "Green",
     Image = "https://cdn.discordapp.com/icons/1370346739286016053/a_8fa894de8f6aa50c468cf9e1a71510f1.png?size=20",
