@@ -207,7 +207,16 @@ local Paragraph = Tab13:Paragraph({
         {
             Icon = "circle-power",
             Title = "Execute",
-            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Selivus08/Elysian/refs/heads/main/ElysianV.lua",true))() end,
+            Callback = function() 
+                if getgenv then
+                  getgenv().BloxtrapRPC = "true"
+                  getgenv().DebugNotifications = "false"
+                  getgenv().TrackMePlease = "true"
+            end
+
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua"))() 
+
+           end,
         }
     }
 })
