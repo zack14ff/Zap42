@@ -135,22 +135,6 @@ local Paragraph = Tab:Paragraph({
     Thumbnail = "",
     ThumbnailSize = 0,
     Locked = false,
-    Buttons = {
-        {
-            Icon = "circle-power",
-            Title = "Launch FartSaken",
-            Callback = function() 
-                if getgenv then
-                  getgenv().BloxtrapRPC = "true"
-                  getgenv().DebugNotifications = "false"
-                  getgenv().TrackMePlease = "true"
-            end
-
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua"))() 
-
-           end,
-        }
-    }
 })
 
 local Paragraph = Tab:Paragraph({
